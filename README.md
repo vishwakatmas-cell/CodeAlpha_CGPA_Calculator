@@ -1,24 +1,47 @@
-#ifndef SUBJECT_H
-#define SUBJECT_H
+# CGPA Calculator (C++)
 
-#include <iostream>
-#include <string>
-using namespace std;
+A console-based CGPA Calculator built using C++ and Object-Oriented Programming (OOP) concepts.
 
-class Subject {
+## Features
+- Enter student details.
+- Add multiple subjects.
+- Store subject grade points and credit hours.
+- Calculate weighted GPA.
+- Display subject details and the final GPA.
 
-private:
-    string subjectName;
-    double gradePoint;
-    int creditHours;
+## Technologies Used
+- C++
+- Object-Oriented Programming (OOP)
+- Classes and Encapsulation
+- Constructors
+- STL Vector
 
-public:
-    Subject(string name, double grade, int credit);
+## Project Structure
+- `main.cpp` – Main program.
+- `student.h` – Student class declaration.
+- `student.cpp` – Student class implementation.
+- `subject.h` – Subject class declaration.
+- `subject.cpp` – Subject class implementation.
 
-    void displaySubject();
+## GPA Formula
 
-    double getGradePoint();
-    int getCreditHours();
-};
+GPA = Sum of (Grade Point × Credit Hours) / Sum of Credit Hours
 
-#endif
+## How to Compile and Run
+
+Make sure a C++ compiler (such as g++) is installed.
+
+Open the terminal in the project folder and run:
+
+```bash
+g++ main.cpp student.cpp subject.cpp -o cgpa
+```
+
+Then run:
+
+```powershell
+.\cgpa
+```
+
+## Author
+GitHub: https://github.com/vishwakatmas-cell
